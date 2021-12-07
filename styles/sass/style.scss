@@ -1,0 +1,52 @@
+@import "contact";
+@import "setup";
+@import "home";
+@import "footer";
+@import "about";
+@import "nav";
+@import "projects";
+@import "skills";
+@import "fontsAndColors";
+
+.wrapper {
+    margin: 0 auto;
+    width: 75%;
+    max-width: 2050px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+.background {
+    background: rgb(255, 147, 225);
+    background: linear-gradient(
+        0deg,
+        rgba(255, 147, 225, 1) 0%,
+        rgba(195, 25, 117, 1) 30%,
+        rgba(78, 2, 170, 1) 66%,
+        rgba(145, 243, 255, 1) 100%
+    );
+    background-repeat: no-repeat;
+}
+
+h2 {
+        font-family: "letter-gothic-std";
+        font-weight: 700;
+        font-style: italic;
+        text-transform: uppercase;
+        color: white;
+        font-size: clamp(3rem, 9vw, 10rem);
+        padding: 10%;
+        margin: 0;
+    }
+
+p {
+    font-family: interstate, sans-serif;
+    font-weight: 700;
+    color: white;
+}

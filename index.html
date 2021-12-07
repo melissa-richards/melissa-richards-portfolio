@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,180 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/acj3rkd.css">
+    <link href="./styles/sass/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0dca288eff.js" crossorigin="anonymous"></script>
     <title>Melissa Richards Portfolio</title>
 </head>
-<body class="background">
-    <div>
-        <h1>Coming Soon</h1>
+
+<body class='background'>
+    <div class="secondGradient">
+        <img class='secondGradientImg' src="./assets/BLASTER_Gradient_10.jpg" alt="">
+        
     </div>
+    <header>
+        <div class='headerContainer'>
+            <img class='momoLogo' src="./assets/momoLogo.png" alt="Logo for Melissa Richards. Nickname Momo">
+            <button id="hamburger" class="hamburger"><i class="fas fa-bars"></i></button>
+            <nav>
+                <ul>
+                    <li><a href="#Home">1/Home</a></li>
+                    <li><a href="#About">2/About</a></li>
+                    <li><a href="#Skills">3/Skills</a></li>
+                    <li><a href="#Projects">4/Projects</a></li>
+                    <li><a href="#Contact">5/Contact</a></li>
+                </ul>
+            </nav>
+            <img class='contactLogo' src="./assets/contactLogo.png" alt="Button Logo for contact information">
+        </div>
+    </header>
+    <main class="wrapper">
+        <section id="Home" class="landingPage">
+            <div class='landingPageContainer'>
+                <div class='leftLanding wrapper'>
+                    <div class='iconsBox'><img src="./assets/multiIcons.png" alt="icon box full of old style icons"></div>
+                    <p class='intro'>Hi There! My name is Melissa Richards and i am passionate about integrating design
+                        and web-development in accessible and fashionable ways. I like to understand the brand and
+                        products from the start to the finish of the App</p>
+                    </div>
+                    <h2>/dev /design</h2>
+            </div>
+        </section>
+
+        <section id="About" class="aboutMe">
+            <h2>/About Me</h2>
+            <div class='emailButton'>
+                <div class='shape'><img src='./assets/iconsBox1.png' alt='box icon of a file folder, old style.'</div>
+                <p><a href='#Contact'>Email Me!</a></p>
+            </div>
+            <img class='portrait' src="./assets/bwABOUT.png" alt="black and white photo of Melissa laying on the floor with hand behind her head. Photo by Alyson Hardwick">
+            <div class='aboutMeText'>
+                <p>Hi There! My name is Melissa Richards and i am passionate about integrating design and
+                    web-development in accessible and
+                    fashionable ways. I like to understand the brand and products from the start to the finish of the
+                    AppHi There! My name is Melissa Richards and i am passionate about integrating design and
+                    web-development in accessible and fashionable ways. I like to understand the brand and products from
+                    the start to the finish of the App</p>
+            </div>
+        </section>
+        <section id="skills" class='skills'>
+            <h2>Skills</h2>
+            <div class='devIconsContainer'>
+                <div class='skillIcons'>
+                    <ul class='iconsList'>
+                        <li><i class="fab fa-js-square"></i></li>
+                        <li><i class="devicon-html5-plain"></i></li>
+                        <li><i class="devicon-firebase-plain"></i></li>
+                        <li><i class="fab fa-github-square"></i></li>
+                        <li><i class="fab fa-sass"></i></li>
+                        <li><i class="devicon-vscode-plain"></i></li>
+                        <li><i class="fab fa-react"></i></li>
+                        <li><i class="devicon-jquery-plain"></i></li>
+                        <li><i class="devicon-photoshop-plain"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <img>
+        </section>
+        <section id="Projects"class="projects">
+            <div class="namerContainer">
+                <div class="appDeviceContainer">
+                    <img src="./assets/iconsBox.png" alt="image of old style icons, computer and ok hand signal">
+                    <img src="./assets/namerDeviceMockUp.png" alt="Device mock up of the Namer App on a laptop and phone screen">
+                </div>
+                <div class="appTextContainer">
+                    <h3>Namer: The Gamer Tag Generator</h3>
+                    <p>So you play the game, whats more important than rank? Your name! Your brand! Namer the gamer tag
+                        generator helps you choose THE most unique handle for all of your smurfing needs!
+                    </p>
+                </div>
+            </div>
+            <div class="deliciousContainer">
+                <div class="appTextContainer">
+                    <h3>Delicious</h3>
+                    <p>A multi-page website PSD conversion made from a client brief. Using responsive design and CSS/HTML best practices</p>
+                </div>
+                <div class="appDeviceContainer">
+                    <img src="./assets/deliciousDeviceMockUp.png" alt="Device mock up of the Delicious app on a tablet screen">
+                </div>
+            </div>
+            <div class="thatGenre">
+                <div class="appTextContainer">
+                    <h3>That Genre</h3>
+                    <p>When the Netflix algorithm just isnt hitting right. Cinephiles can use That Genre App to search
+                        for movie titles in
+                        their desired genre resulting in lists of movies from around the globe</p>
+                </div>
+                <div class="appDeviceContainer">
+                    <img src="./assets/thatGenreDeviceMockUp.png" alt="Device mock up of That Genre App on a laptop and phone screen">
+                </div>
+            </div>
+            <div><img src="./assets/iconsBox4.png" alt="Icon box with keyboard icon inside"></div>
+            <div class="ybsTours">
+                <div class="appDeviceContainer">
+                    <img src="./assets/ybs2DeviceMockUp.png" alt="Device mock up of the YBS Tours App on a laptop">
+                    <img src="./assets/ybsDeviceMockUp.png" alt="Device mock up for the YBS Tours App on a phone">
+                </div>
+                <div class="appTextContainer">
+                    <h3></h3>
+                    <p>A react app created from a client brief for YBS Galactic Tours that provided an online preview of
+                        their upcoming space tours.</p>
+                </div>
+            </div>
+        </section>
+        <section id="Contact" class="contact">
+            <h2>Contact</h2>
+            <div class="formContainer">
+                <form id="contact-form">
+                    <div class="blog-form-input-name">
+                        <input type="text" id="Name" name="Name" class="name" placeholder="Name*" required>
+                    </div>
+                    <div class="contact-form">
+                        <input type="email" id="Email" name="Email" class="email" placeholder="Email*" required>
+                    </div>
+                    <div class="website-form">
+                        <input type="email" id="Website" name="Website" class="website" placeholder="Your Website">
+                    </div>
+                    <div class="comment-form">
+                        <textarea id="Comment" name="Comment" class="blog-contact-form-text" rows="10" maxlength="3000"
+                            placeholder="Say Hello!" required></textarea>
+                    </div>
+                    <div class="submit-button-form">
+                        <button type="submit" id="contact-button" class="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class='footerContainer'>
+            <div>
+                <ul class='footerIconsList'>
+                    <li><i class="fab fa-js-square"></i></li>
+                    <li><i class="devicon-html5-plain"></i></li>
+                    <li><i class="devicon-firebase-plain"></i></li>
+                    <li><i class="fab fa-github-square"></i></li>
+                    <li><i class="fab fa-sass"></i></li>
+                    <li><i class="devicon-vscode-plain"></i></li>
+                    <li><i class="fab fa-react"></i></li>
+                    <li><i class="devicon-jquery-plain"></i></li>
+                    <li><i class="devicon-photoshop-plain"></i></li>
+                </ul>
+            </div>
+            <div>
+                <img src="./assets/iconsBox2.png" alt="Old style icons in a box">
+            </div>
+            <div class="followIcons">
+                <ul>
+                    <li><a href="https://www.instagram.com/thelittlestmomo/?hl=en"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/melissa-richards-30a26b89/"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://twitter.com/Dumbmates"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>
