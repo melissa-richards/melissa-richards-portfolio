@@ -23,15 +23,16 @@ img {
 }
 
 .background {
-    background: rgb(255, 147, 225);
-    background: linear-gradient(
-        0deg,
-        rgba(255, 147, 225, 1) 0%,
-        rgba(195, 25, 117, 1) 30%,
-        rgba(78, 2, 170, 1) 66%,
-        rgba(145, 243, 255, 1) 100%
-    );
-    background-repeat: no-repeat;
+    // background: rgb(255, 147, 225);
+    // background: linear-gradient(
+    //     0deg,
+    //     rgba(255, 147, 225, 1) 0%,
+    //     rgba(195, 25, 117, 1) 30%,
+    //     rgba(78, 2, 170, 1) 66%,
+    //     rgba(145, 243, 255, 1) 100%
+    // );
+    // background-repeat: no-repeat;
+    background-color: red;
 }
 
 h2 {
