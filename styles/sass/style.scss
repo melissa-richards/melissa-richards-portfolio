@@ -1,12 +1,12 @@
-@import "contact";
-@import "setup";
-@import "home";
-@import "footer";
-@import "about";
-@import "nav";
-@import "projects";
-@import "skills";
-@import "fontsAndColors";
+@import 'contact';
+@import 'setup';
+@import 'home';
+@import 'footer';
+@import 'about';
+@import 'nav';
+@import 'projects';
+@import 'skills';
+@import 'fontsAndColors';
 
 .wrapper {
     margin: 0 auto;
@@ -22,6 +22,7 @@ img {
     width: 100%;
 }
 
+
 .background {
     background: rgb(255, 147, 225);
     background: linear-gradient(
@@ -32,6 +33,7 @@ img {
         rgba(145, 243, 255, 1) 100%
     );
     background-repeat: no-repeat;
+    
 }
 
 h2 {
@@ -39,6 +41,7 @@ h2 {
         font-weight: 700;
         font-style: italic;
         text-transform: uppercase;
+        letter-spacing: 8px;
         color: white;
         font-size: clamp(3rem, 9vw, 10rem);
         padding: 10%;
