@@ -1,3 +1,77 @@
+form {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.formFlexContainer {
+  display: flex;
+}
+
+.nameForm {
+  margin-right: 20px;
+}
+
+.message {
+  height: 350px;
+}
+
+.name,
+.email,
+.message,
+.submit {
+  background-color: aqua;
+  color: #ff0062;
+  border: 6px solid #ff0062;
+  font-family: "changeling-neo", sans-serif;
+  font-weight: 400;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+.name::-moz-placeholder, .email::-moz-placeholder, .message::-moz-placeholder, .submit::-moz-placeholder {
+  opacity: 1;
+}
+.name:-ms-input-placeholder, .email:-ms-input-placeholder, .message:-ms-input-placeholder, .submit:-ms-input-placeholder {
+  opacity: 1;
+}
+.name::placeholder,
+.email::placeholder,
+.message::placeholder,
+.submit::placeholder {
+  opacity: 1;
+}
+
+.submit:hover,
+:focus {
+  background: linear-gradient(-45deg, #ee52d4, #e7dc3c, #23d5ab);
+  -webkit-animation: gradient 5s ease infinite;
+          animation: gradient 5s ease infinite;
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 20% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 20% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -326,7 +400,8 @@ h2 {
   font-weight: 700;
   font-style: italic;
   text-transform: uppercase;
-  color: red;
+  letter-spacing: 8px;
+  color: white;
   font-size: clamp(3rem, 9vw, 10rem);
   padding: 10%;
   margin: 0;
