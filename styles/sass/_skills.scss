@@ -1,0 +1,26 @@
+.skills {
+    h2{
+        margin-left: 30%;
+    }
+}
+.devIconsContainer {
+    width: 100%;
+    .iconsList {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        align-items: center;
+        justify-items: center;
+        font-size: clamp(2rem, 10vw, 7rem);
+        color: white;
+        margin-top: 0;
+        gap: 45px;
+        padding-left: 0;
+        list-style-type: none;
+        .iconImg {
+            grid-column: 1 / span 2;
+            grid-row: 3 / span 2;
+            width: 100%;
+        }
+    }
+}

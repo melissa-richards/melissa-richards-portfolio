@@ -45,33 +45,34 @@ form {
 
 .submit:hover,
 :focus {
-  background: linear-gradient(-45deg, #ee52d4, #e7dc3c, #23d5ab);
-  -webkit-animation: gradient 5s ease infinite;
-          animation: gradient 5s ease infinite;
-}
-@-webkit-keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 20% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 20% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
+  background: linear-gradient(89deg, #ff00bd, #ffe300, #00ff0a, #00ffeb);
+  background-size: 800% 800%;
+  -webkit-animation: AnimationName 59s ease infinite;
+  animation: AnimationName 10s ease infinite;
 }
 
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 52%;
+  }
+  50% {
+    background-position: 100% 49%;
+  }
+  100% {
+    background-position: 0% 52%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 52%;
+  }
+  50% {
+    background-position: 100% 49%;
+  }
+  100% {
+    background-position: 0% 52%;
+  }
+}
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -332,18 +333,76 @@ template {
 }
 
 .aboutMe {
-  display: flex;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 5%;
 }
-.aboutMe .portrait {
-  width: 60%;
-  border-radius: 45px;
+.aboutMe .aboutMeText {
+  width: 55%;
+  margin-top: 10%;
+  margin-left: 20%;
+  padding: 5px 25px;
+  border-left: 4px solid white;
 }
-.aboutMe .shape {
-  width: 200px;
+
+.portrait {
+  position: relative;
+  width: 55%;
+  margin-left: 35%;
+}
+.portrait img {
+  border-radius: 35px;
+}
+.portrait p {
+  position: absolute;
+  right: -5%;
+  bottom: -5%;
+  background-color: aqua;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #fb195d;
+  border-radius: 100px;
+  text-align: center;
+  padding-top: 6%;
+}
+.portrait p a {
+  color: #fb195d;
+  font-family: "changeling-neo", sans-serif;
+  font-weight: 400;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+.portrait p a:hover {
+  color: black;
+}
+.portrait p a:focus {
+  color: black;
+}
+.portrait p a:active {
+  color: black;
+}
+
+.parentContainer {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10%;
+}
+.parentContainer h2 {
+  position: relative;
+  z-index: 9;
+}
+.parentContainer .aboutMePositions {
+  position: absolute;
+  top: 5%;
+  left: 3%;
+}
+.parentContainer .aboutMePositions .folderShape {
+  width: 30%;
 }
 
 header {
   border-bottom: 3px solid white;
+  z-index: 12;
 }
 
 .headerContainer {
@@ -362,6 +421,7 @@ header {
      object-fit: contain;
 }
 .headerContainer button {
+  z-index: 11;
   background: none;
   color: white;
   border: none;
@@ -373,6 +433,74 @@ header {
 }
 .headerContainer nav {
   display: none;
+}
+
+.hamburger {
+  margin-top: 20px;
+  position: fixed;
+  z-index: 11;
+}
+
+.navHamburger {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  font-family: "letter-gothic-std";
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  color: white;
+  font-size: clamp(3rem, 9vw, 10rem);
+  padding: 5% 10% 10% 10%;
+  margin: 0;
+  z-index: 10;
+  background: #ff5fe9;
+  background: linear-gradient(90deg, #ff5fe9 0%, #eafa00 60%);
+  background-position: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.navHamburger a {
+  color: white;
+  text-align: center;
+}
+.navHamburger ul {
+  list-style-type: none;
+  margin: 0 auto;
+}
+.navHamburger ul li {
+  list-style-type: none;
+  text-align: center;
+}
+
+.skills h2 {
+  margin-left: 30%;
+}
+
+.devIconsContainer {
+  width: 100%;
+}
+.devIconsContainer .iconsList {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+  font-size: clamp(2rem, 10vw, 7rem);
+  color: white;
+  margin-top: 0;
+  gap: 45px;
+  padding-left: 0;
+  list-style-type: none;
+}
+.devIconsContainer .iconsList .iconImg {
+  grid-column: 1/span 2;
+  grid-row: 3/span 2;
+  width: 100%;
 }
 
 .wrapper {

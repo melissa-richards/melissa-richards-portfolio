@@ -23,21 +23,23 @@
     <header>
         <div class='headerContainer'>
             <img class='momoLogo' src='./assets/momoLogo.png' alt='Logo for Melissa Richards. Nickname Momo'>
-            <button id='hamburger' class='hamburger'><i class="fas fa-bars"></i></button>
-            <nav>
-                <ul>
-                    <li><a href='#Home'>1/Home</a></li>
-                    <li><a href='#About'>2/About</a></li>
-                    <li><a href='#Skills'>3/Skills</a></li>
-                    <li><a href='#Projects'>4/Projects</a></li>
-                    <li><a href='#Contact'>5/Contact</a></li>
-                </ul>
-            </nav>
+            <div class='hamburgerContainer'>
+                <button id='hamburger' class='hamburger'><i class="fas fa-bars"></i></button>
+                <nav class='navHamburger' id="navHamburger">
+                    <ul>
+                        <li><a  href='#home'>1/Home</a></li>
+                        <li><a  href='#about'>2/About</a></li>
+                        <li><a  href='#skills'>3/Skills</a></li>
+                        <li><a  href='#projects'>4/Projects</a></li>
+                        <li><a  href='#contact'>5/Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
             <img class='contactLogo' src='./assets/contactLogo.png' alt='Button Logo for contact information'>
         </div>
     </header>
     <main class='wrapper'>
-        <section id='Home' class='landingPage'>
+        <section id='home' class='landingPage'>
             <div class='landingPageContainer'>
                 <div class='leftLanding wrapper'>
                     <div class='iconsBox'><img src="./assets/multiIcons.png" alt="icon box full of old style icons">
@@ -50,48 +52,60 @@
             </div>
         </section>
 
-        <section id='About' class='aboutMe'>
-            <h2>/About Me</h2>
-            <div class='emailButton'>
-                <div class='shape'><img src='./assets/iconsBox1.png' alt='box icon of a file folder, old style.' </div>
+        <section id='about' class='aboutMe'>
+            <div class='aboutMeContainer'>
+                <div class='parentContainer'>
+                    <div class='aboutMePositions'>
+                        <div class='folderShape'><img src='./assets/iconsBox1.png' alt='box icon of a file folder, old style.'></div>
+                        <h2>/About Me</h2>
+                    </div>
+                </div>
+                <div class='portrait'>
+                    <img src='./assets/bwABOUT.png'
+                    alt='black and white photo of Melissa laying on the floor with hand behind her head. Photo by Alyson Hardwick'>       
                     <p><a href='#Contact'>Email Me!</a></p>
                 </div>
-                <img class='portrait' src='./assets/bwABOUT.png'
-                    alt='black and white photo of Melissa laying on the floor with hand behind her head. Photo by Alyson Hardwick'>
-                <div class='aboutMeText'>
-                    <p>Hi There! My name is Melissa Richards and i am passionate about integrating design and
-                        web-development in accessible and
-                        fashionable ways. I like to understand the brand and products from the start to the finish of
-                        the
-                        AppHi There! My name is Melissa Richards and i am passionate about integrating design and
-                        web-development in accessible and fashionable ways. I like to understand the brand and products
-                        from
-                        the start to the finish of the App</p>
-                </div>
+            </div>
+            <div class='aboutMeText'>
+                <p>Hi There! My name is Melissa Richards and i am passionate about integrating design and
+                    web-development in accessible and
+                    fashionable ways. I like to understand the brand and products from the start to the finish of
+                    the
+                    AppHi There! My name is Melissa Richards and i am passionate about integrating design and
+                    web-development in accessible and fashionable ways. I like to understand the brand and products
+                    from
+                    the start to the finish of the App</p>
+            </div>
+            </div>
         </section>
         <section id='skills' class='skills'>
-            <h2>Skills</h2>
+            <h2>/Skills</h2>
             <div class='devIconsContainer'>
                 <div class='skillIcons'>
                     <ul class='iconsList'>
+                        <div></div>
                         <li><i class="fab fa-js-square"></i></li>
                         <li><i class="devicon-html5-plain"></i></li>
                         <li><i class="devicon-firebase-plain"></i></li>
                         <li><i class="fab fa-github-square"></i></li>
+                        <div></div>
+                        <div></div>
                         <li><i class="fab fa-sass"></i></li>
                         <li><i class="devicon-vscode-plain"></i></li>
                         <li><i class="fab fa-react"></i></li>
+                        <div></div>
                         <li><i class="devicon-jquery-plain"></i></li>
                         <li><i class="devicon-photoshop-plain"></i></li>
+                        <div class="iconImg"><img src='./assets/iconsBoxFlick.png' alt='image of old style icons, computer and ok hand signal'></div>
                     </ul>
                 </div>
             </div>
             <img>
         </section>
-        <section id='Projects' class='projects'>
+        <section id='projects' class='projects'>
             <div class='namerContainer'>
+                <h2>/Projects</h2>
                 <div class='appDeviceContainer'>
-                    <img src='./assets/iconsBox.png' alt='image of old style icons, computer and ok hand signal'>
                     <img src='./assets/namerDeviceMockUp.png'
                         alt='Device mock up of the Namer App on a laptop and phone screen'>
                 </div>
@@ -109,8 +123,8 @@
                         CSS/HTML best practices</p>
                 </div>
                 <div class='appDeviceContainer'>
-                    <img src='./assets/deliciousDeviceMockUp.png"
-                        alt="Device mock up of the Delicious app on a tablet screen'>
+                    <img src='./assets/deliciousDeviceMockUp.png'
+                        alt='Device mock up of the Delicious app on a tablet screen'>
                 </div>
             </div>
             <div class='thatGenre'>
@@ -133,12 +147,11 @@
                 </div>
                 <div class='appTextContainer'>
                     <h3></h3>
-                    <p>A react app created from a client brief for YBS Galactic Tours that provided an online preview of
-                        their upcoming space tours.</p>
+                    <p>A react app created from a client brief for YBS Galactic Tours that provided an online preview of their upcoming space tours.</p>
                 </div>
             </div>
         </section>
-        <section id='Contact' class='contact'>
+        <section id='contact' class='contact'>
             <h2>/Contact</h2>
             <div class='formContainer'>
                 <form action='mailto:melissarichardsdesign@gmail.com' method='POST' id='contact-form'>
@@ -152,7 +165,7 @@
                     </div>
                     <div class='messageForm'>
                         <textarea id='Message' name='Message' class='message' rows='10' maxlength='3000'
-                            placeholder="what's on your mind?"required></textarea>
+                            placeholder="what's on your mind?" required></textarea>
                     </div>
                     <div class='submitButtonBorm'>
                         <button type='submit' id='contactButton' class='submit'>Send</button>
@@ -194,5 +207,6 @@
     <script src='https://smtpjs.com/v3/smtp.js'></script>
     <script src='./scripts.js'></script>
 </body>
+
 
 </html>
