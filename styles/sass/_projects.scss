@@ -1,0 +1,11 @@
+.projects {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    .appDeviceContainer{
+        display: flex;
+        img {
+            width: 50%;
+        }
+    } 
+}
