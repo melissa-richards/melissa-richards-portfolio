@@ -41,7 +41,12 @@ header {
     margin-top: 20px;
     position: fixed;
     z-index: 11;
+    &:focus{
+        border:1px dotted rgb(42, 42, 42);
+    }
 }
+
+
 
 .navHamburger {
     width: 100%;
