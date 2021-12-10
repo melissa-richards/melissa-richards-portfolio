@@ -44,6 +44,8 @@
         margin-bottom: 40px;
         .appTextContainer{
             width: 80%;
+            padding: 5px 25px;
+            border-left: 4px solid white;
         }
     }
 }
@@ -56,15 +58,24 @@
         flex-direction: column-reverse;
         margin-top: 10%;
     }
+    .appDeviceContainer {
+        @media (max-width: 890px) {
+            width: 90%;
+            padding: 25px;
+            }
+    }
     .appTextContainer {
         padding-top: 10%;
         padding-right: 10%;
         border-top: 9px solid rgba(38, 0, 255, 0.3);
         border-right:9px solid rgba(38, 0, 255, 0.3);
-         @media (max-width: 890px) {
-         border: none;
-         text-align: left;
-         width: 100%;
+        @media (max-width: 890px) {
+            border: none;
+            text-align: left;
+            width: 90%;
+            margin-top: 5%;
+            padding: 5px 25px;
+            border-left: 4px solid white;
         }
     }
 }
@@ -73,7 +84,7 @@
 
 .thatGenreContainer {
     display: flex;
-    margin-top: 20%;
+    margin-top: 10%;
     @media (max-width: 890px) {
         flex-direction: column-reverse;
     }
@@ -91,6 +102,8 @@
         @media(max-width: 890px){
             border: none;
             width: 100%;
+            padding: 5px 25px;
+            border-left: 4px solid white;
         }
     }
     .appDeviceContainer {
@@ -125,8 +138,10 @@
         margin: 0;
         padding-left: 40px;
         @media (max-width: 890px) {
-         text-align: left;
-         width: 100%;
+            text-align: left;
+            width: 100%;
+            padding: 5px 25px;
+            border-left: 4px solid white;
         }
     }
 }

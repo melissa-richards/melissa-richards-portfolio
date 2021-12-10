@@ -2,6 +2,11 @@ form {
   width: 70%;
   margin: 0 auto;
 }
+@media (max-width: 890px) {
+  form {
+    width: 100%;
+  }
+}
 
 .contact h2 {
   margin-left: 8%;
@@ -321,8 +326,8 @@ template {
   z-index: -1;
   position: absolute;
   top: -20px;
-  right: -20px;
-  border-radius: 25px;
+  right: 0px;
+  border-radius: 0px 0px 0px 25px;
   width: 65%;
   min-width: 900px;
 }
@@ -385,6 +390,11 @@ footer {
   width: 33.3%;
   padding: 50px;
 }
+@media (max-width: 890px) {
+  .footerContainer .oldIcons {
+    display: none;
+  }
+}
 .footerContainer .photoContainer {
   margin: 0 auto;
   display: flex;
@@ -396,6 +406,11 @@ footer {
   -o-object-fit: contain;
      object-fit: contain;
   width: 50%;
+}
+@media (max-width: 890px) {
+  .footerContainer .photoContainer {
+    display: none;
+  }
 }
 
 .followIcons {
@@ -416,6 +431,12 @@ footer {
 }
 .followIcons a:hover {
   color: #ff0077;
+}
+@media (max-width: 890px) {
+  .followIcons {
+    margin: 0 auto;
+    padding: 0;
+  }
 }
 
 .aboutMe {
@@ -671,6 +692,8 @@ header {
   }
   .namerContainer .appTextContainer {
     width: 80%;
+    padding: 5px 25px;
+    border-left: 4px solid white;
   }
 }
 
@@ -685,6 +708,12 @@ header {
     margin-top: 10%;
   }
 }
+@media (max-width: 890px) {
+  .deliciousContainer .appDeviceContainer {
+    width: 90%;
+    padding: 25px;
+  }
+}
 .deliciousContainer .appTextContainer {
   padding-top: 10%;
   padding-right: 10%;
@@ -695,13 +724,16 @@ header {
   .deliciousContainer .appTextContainer {
     border: none;
     text-align: left;
-    width: 100%;
+    width: 90%;
+    margin-top: 5%;
+    padding: 5px 25px;
+    border-left: 4px solid white;
   }
 }
 
 .thatGenreContainer {
   display: flex;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 @media (max-width: 890px) {
   .thatGenreContainer {
@@ -724,6 +756,8 @@ header {
   .thatGenreContainer .appTextContainer {
     border: none;
     width: 100%;
+    padding: 5px 25px;
+    border-left: 4px solid white;
   }
 }
 .thatGenreContainer .appDeviceContainer {
@@ -764,6 +798,8 @@ header {
   .ybsTours .appTextContainer {
     text-align: left;
     width: 100%;
+    padding: 5px 25px;
+    border-left: 4px solid white;
   }
 }
 
