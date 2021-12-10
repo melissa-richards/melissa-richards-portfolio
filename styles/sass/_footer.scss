@@ -12,6 +12,9 @@ footer {
     .oldIcons {
         width: 33.3%;
         padding: 50px;
+        @media(max-width: 890px){
+            display: none;
+        }
     }
     .photoContainer{
         margin: 0 auto;
@@ -21,6 +24,9 @@ footer {
         img{
             object-fit: contain;
             width: 50%;
+        }
+        @media(max-width: 890px){
+            display: none;
         }
     }
 }
@@ -43,4 +49,8 @@ footer {
             color: rgb(255, 0, 119);
         }
     }
+    @media(max-width: 890px){
+            margin: 0 auto;
+            padding: 0;
+        }
 }
