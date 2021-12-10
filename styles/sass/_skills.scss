@@ -11,7 +11,7 @@
         grid-template-rows: repeat(4, 1fr);
         align-items: center;
         justify-items: center;
-        font-size: clamp(2rem, 10vw, 7rem);
+        font-size: clamp(1rem, 10vw, 7rem);
         color: white;
         margin-top: 0;
         gap: 45px;
@@ -24,6 +24,9 @@
             grid-column: 1 / span 2;
             grid-row: 3 / span 2;
             width: 100%;
+            @media (max-width: 890px){
+                opacity: 0%;
+            }
         }
     }
 }

@@ -14,9 +14,12 @@ header {
         width: 20%;
         max-width: 180px;
         object-fit: contain;
+        @media (max-width: 890px) {
+            display: none;
+        }
     }
     .contactLogo{
-        padding-top: 15px;
+        margin-top: 10%;
     }
     button {
         z-index: 11;
@@ -76,6 +79,3 @@ header {
     }
 }
 
-// .contactHeader {
-//     width: 100%;
-// }

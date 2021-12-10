@@ -12,6 +12,7 @@
         width: 50%;
         margin-left: 10%;
     }
+    
 }
 
 .projectLinks {
@@ -22,7 +23,7 @@
     border: 3px solid rgb(255, 0, 98);
     font-family: "changeling-neo", sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding: 3px;
     text-transform: uppercase;
     text-decoration: none;
@@ -38,17 +39,33 @@
 
 .namerContainer {
     display: flex;
+    @media (max-width: 890px) {
+        display: block;
+        margin-bottom: 40px;
+        .appTextContainer{
+            width: 80%;
+        }
+    }
 }
 
 .deliciousContainer {
     display: flex;
     text-align: right;
     margin-top: 8%;
+    @media (max-width: 890px) {
+        flex-direction: column-reverse;
+        margin-top: 10%;
+    }
     .appTextContainer {
         padding-top: 10%;
         padding-right: 10%;
         border-top: 9px solid rgba(38, 0, 255, 0.3);
         border-right:9px solid rgba(38, 0, 255, 0.3);
+         @media (max-width: 890px) {
+         border: none;
+         text-align: left;
+         width: 100%;
+        }
     }
 }
 
@@ -57,6 +74,9 @@
 .thatGenreContainer {
     display: flex;
     margin-top: 20%;
+    @media (max-width: 890px) {
+        flex-direction: column-reverse;
+    }
     .appDeviceContainer{
         display: flex;
         img {
@@ -68,6 +88,10 @@
         border-left:9px solid rgba(38, 0, 255, 0.3);
         padding: 5%;
         margin: 0;
+        @media(max-width: 890px){
+            border: none;
+            width: 100%;
+        }
     }
     .appDeviceContainer {
         width: 100%;
@@ -80,6 +104,11 @@
     border-top: 9px solid rgba(38, 0, 255, 0.3);
     border-left:9px solid rgba(38, 0, 255, 0.3);
     padding: 5%;
+    @media (max-width: 890px) {
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
     .appDeviceContainer {
         .ybsLaptop {
             width: 70%;
@@ -87,11 +116,18 @@
         .ybsTablet {
             padding-top: 10%;
             width: 40%;
+            @media (max-width: 890px) {
+            display:none;
+            }
         }
     }
     .appTextContainer {
         margin: 0;
         padding-left: 40px;
+        @media (max-width: 890px) {
+         text-align: left;
+         width: 100%;
+        }
     }
 }
 
