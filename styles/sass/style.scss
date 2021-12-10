@@ -8,6 +8,7 @@
 @import 'skills';
 @import 'fontsAndColors';
 
+
 .wrapper {
     margin: 0 auto;
     width: 75%;
@@ -16,11 +17,13 @@
 
 body {
     overflow-x: hidden;
+    animation: fade-in 2s ease-in;
 }
 
 img {
     width: 100%;
 }
+
 
 
 .background {
@@ -48,8 +51,16 @@ h2 {
         margin: 0;
     }
 
+h3 {
+        font-family: letter-gothic-std, monospace;
+        font-weight: 400;
+        font-size: 2.8rem;
+        text-transform: uppercase;
+        color: white;
+    }
+
 p {
-    font-family: interstate, sans-serif;
+    font-family: letter-gothic-std, monospace;
     font-weight: 700;
     color: white;
 }

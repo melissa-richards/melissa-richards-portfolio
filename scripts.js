@@ -2,8 +2,8 @@
 myApp = {}
 // namespace/function to add event listener  and get input from user
 myApp.onSubmit = function () {
-    const formElement = document.querySelector('form') 
-    formElement.addEventListener('submit', function (event){
+    const formElement = document.querySelector('form')
+    formElement.addEventListener('submit', function (event) {
         event.preventDefault()
 
         //get input values
@@ -29,8 +29,37 @@ function sendEmail(name, email, message) {
     }).then((message) => alert('the e-mail has been sent'))
 }
 
-myApp.init = function (){
-myApp.onSubmit()
+myApp.init = function () {
+    myApp.onSubmit()
 }
 
-myApp.init() 
+document.onreadystatechange = function () {
+    if (document.readyState == "interactive") {
+        
+        let displayMenu = false;
+
+        const menu = document.getElementById("navHamburger");
+
+        const hamburgerMenu = document.getElementById
+        ("hamburger");
+
+        hamburgerMenu.addEventListener("click", function () {
+            displayMenu = !displayMenu;
+            menu.style.display = displayMenu ? 'block' : 'none';
+        });
+
+        const navMenu = document.querySelectorAll('#navHamburger a')
+
+        navMenu.forEach( (li) => {
+            li.addEventListener('click', function () {
+                displayMenu = !displayMenu;
+                menu.style.display = 'none';
+            })
+        })
+    }
+}
+
+
+
+
+myApp.init()
