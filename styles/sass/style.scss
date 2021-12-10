@@ -13,6 +13,9 @@
     margin: 0 auto;
     width: 75%;
     max-width: 2050px;
+    @media (max-width: 1320px) {
+        width: 90%;
+    }
 }
 
 body {
@@ -46,7 +49,7 @@ h2 {
         text-transform: uppercase;
         letter-spacing: 8px;
         color: white;
-        font-size: clamp(3rem, 9vw, 10rem);
+        font-size: clamp(2rem, 9vw, 10rem);
         padding: 10%;
         margin: 0;
     }

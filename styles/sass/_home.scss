@@ -7,11 +7,20 @@
         right: -20px;
         border-radius: 25px;
         width: 65%;
+        min-width: 900px;
     }
 }
 .landingPageContainer {
     display: flex;
     margin-bottom: 150px;
+    @media (max-width: 1165px) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    @media (max-width: 890px) {
+        flex-direction: column-reverse;
+        width: 100%;
+    }  
 }
 
 .leftLanding {
@@ -20,17 +29,22 @@
         font-family: interstate, sans-serif;
         font-weight: 700;
         color: white;
-        font-size: clamp(1.5rem, 1.2vw);
-        max-width: 300px;
-        max-height: 300px;
+        font-size: clamp(0.8rem, 6vw, 1rem);
         padding: 25px;
         border-left: 3px solid white;
+        max-height: 245px;
     }
     
+
     .iconsBox {
         padding-left: 25px;
-        
+        width: 80%;
+        @media (max-width: 890px) {
+            display: none;
+        }
     }
-
+    @media (max-width: 890px) {
+            display:flex;
+            width: 98%;
+        }
 }
-

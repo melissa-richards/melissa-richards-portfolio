@@ -1,13 +1,18 @@
 .aboutMe {
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
     margin-bottom: 5%;
     .aboutMeText {
         width: 55%;
         margin-top: 10%;
         margin-left: 20%;
         padding: 5px 25px;
-        border-left: 4px solid white
+        border-left: 4px solid white;
+        @media (max-width: 890px){
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 5%;
+        }
     }
 }
 
@@ -17,6 +22,10 @@
     width: 55%;
     margin-left: 35%;
     z-index: 4;
+    @media (max-width: 890px) {
+            width: 90%;
+            margin: 0 auto;
+        }
     cursor: url(../../assets/yinyangCursor.png), auto;
     &:hover{
         background-image: url(../../assets/moGlitch.png);
@@ -42,6 +51,9 @@
         border-radius: 100px;
         text-align: center;
         padding-top: 7%;
+        @media (max-width: 890px) {
+            display: none;
+        }
         a {
             color: rgb(251, 25, 93);
             font-family: "changeling-neo", sans-serif;
@@ -63,20 +75,37 @@
 
 
 .parentContainer {
-    position: relative;
-    width: 100%;
-    margin-bottom: 10%;
+        position: relative;
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+
+.aboutMePositions{
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    @media (max-width: 890px) {
+            position: relative;
+        }
     h2 {
         position: relative;
         z-index: 9;
-        cursor: url(../../assets/yinyangCursor.png), auto;
+        @media (max-width: 320px) {
+            display: block;
+            margin-bottom: 20%;
+        }
+        @media (max-width: 890px) {
+            position: inherit;
+        }
+        @media (max-width: 890px) {
+            display: block;
+        }
     }
-    .aboutMePositions{
-        position: absolute;
-        top: 5%;
-        left: 3%;
-        .folderShape{
-            width: 30%;
+    .folderShape{
+        width: 30%;
+        @media (max-width: 890px) {
+            display: none;
         }
     }
 }

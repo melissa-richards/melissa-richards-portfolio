@@ -324,25 +324,49 @@ template {
   right: -20px;
   border-radius: 25px;
   width: 65%;
+  min-width: 900px;
 }
 
 .landingPageContainer {
   display: flex;
   margin-bottom: 150px;
 }
+@media (max-width: 1165px) {
+  .landingPageContainer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+@media (max-width: 890px) {
+  .landingPageContainer {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+}
 
 .leftLanding .intro {
   font-family: interstate, sans-serif;
   font-weight: 700;
   color: white;
-  font-size: clamp(1.5rem, 1.2vw);
-  max-width: 300px;
-  max-height: 300px;
+  font-size: clamp(0.8rem, 6vw, 1rem);
   padding: 25px;
   border-left: 3px solid white;
+  max-height: 245px;
 }
 .leftLanding .iconsBox {
   padding-left: 25px;
+  width: 80%;
+}
+@media (max-width: 890px) {
+  .leftLanding .iconsBox {
+    display: none;
+  }
+}
+@media (max-width: 890px) {
+  .leftLanding {
+    display: flex;
+    width: 98%;
+  }
 }
 
 footer {
@@ -396,7 +420,6 @@ footer {
 
 .aboutMe {
   width: 100%;
-  height: 100vh;
   margin-bottom: 5%;
 }
 .aboutMe .aboutMeText {
@@ -406,6 +429,13 @@ footer {
   padding: 5px 25px;
   border-left: 4px solid white;
 }
+@media (max-width: 890px) {
+  .aboutMe .aboutMeText {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+}
 
 .portrait {
   position: relative;
@@ -413,6 +443,12 @@ footer {
   margin-left: 35%;
   z-index: 4;
   cursor: url(../../assets/yinyangCursor.png), auto;
+}
+@media (max-width: 890px) {
+  .portrait {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 .portrait:hover {
   background-image: url(../../assets/moGlitch.png);
@@ -439,6 +475,11 @@ footer {
   text-align: center;
   padding-top: 7%;
 }
+@media (max-width: 890px) {
+  .portrait p {
+    display: none;
+  }
+}
 .portrait p a {
   color: #fb195d;
   font-family: "changeling-neo", sans-serif;
@@ -461,18 +502,44 @@ footer {
   width: 100%;
   margin-bottom: 10%;
 }
-.parentContainer h2 {
-  position: relative;
-  z-index: 9;
-  cursor: url(../../assets/yinyangCursor.png), auto;
-}
-.parentContainer .aboutMePositions {
+
+.aboutMePositions {
   position: absolute;
   top: 5%;
   left: 3%;
 }
-.parentContainer .aboutMePositions .folderShape {
+@media (max-width: 890px) {
+  .aboutMePositions {
+    position: relative;
+  }
+}
+.aboutMePositions h2 {
+  position: relative;
+  z-index: 9;
+}
+@media (max-width: 320px) {
+  .aboutMePositions h2 {
+    display: block;
+    margin-bottom: 20%;
+  }
+}
+@media (max-width: 890px) {
+  .aboutMePositions h2 {
+    position: inherit;
+  }
+}
+@media (max-width: 890px) {
+  .aboutMePositions h2 {
+    display: block;
+  }
+}
+.aboutMePositions .folderShape {
   width: 30%;
+}
+@media (max-width: 890px) {
+  .aboutMePositions .folderShape {
+    display: none;
+  }
 }
 
 header {
@@ -495,8 +562,14 @@ header {
   -o-object-fit: contain;
      object-fit: contain;
 }
+@media (max-width: 890px) {
+  .headerContainer .momoLogo,
+.headerContainer .contactHeader {
+    display: none;
+  }
+}
 .headerContainer .contactLogo {
-  padding-top: 15px;
+  margin-top: 10%;
 }
 .headerContainer button {
   z-index: 11;
@@ -579,7 +652,7 @@ header {
   border: 3px solid #ff0062;
   font-family: "changeling-neo", sans-serif;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding: 3px;
   text-transform: uppercase;
   text-decoration: none;
@@ -591,11 +664,26 @@ header {
 .namerContainer {
   display: flex;
 }
+@media (max-width: 890px) {
+  .namerContainer {
+    display: block;
+    margin-bottom: 40px;
+  }
+  .namerContainer .appTextContainer {
+    width: 80%;
+  }
+}
 
 .deliciousContainer {
   display: flex;
   text-align: right;
   margin-top: 8%;
+}
+@media (max-width: 890px) {
+  .deliciousContainer {
+    flex-direction: column-reverse;
+    margin-top: 10%;
+  }
 }
 .deliciousContainer .appTextContainer {
   padding-top: 10%;
@@ -603,10 +691,22 @@ header {
   border-top: 9px solid rgba(38, 0, 255, 0.3);
   border-right: 9px solid rgba(38, 0, 255, 0.3);
 }
+@media (max-width: 890px) {
+  .deliciousContainer .appTextContainer {
+    border: none;
+    text-align: left;
+    width: 100%;
+  }
+}
 
 .thatGenreContainer {
   display: flex;
   margin-top: 20%;
+}
+@media (max-width: 890px) {
+  .thatGenreContainer {
+    flex-direction: column-reverse;
+  }
 }
 .thatGenreContainer .appDeviceContainer {
   display: flex;
@@ -620,6 +720,12 @@ header {
   padding: 5%;
   margin: 0;
 }
+@media (max-width: 890px) {
+  .thatGenreContainer .appTextContainer {
+    border: none;
+    width: 100%;
+  }
+}
 .thatGenreContainer .appDeviceContainer {
   width: 100%;
   margin-left: 5%;
@@ -631,6 +737,13 @@ header {
   border-left: 9px solid rgba(38, 0, 255, 0.3);
   padding: 5%;
 }
+@media (max-width: 890px) {
+  .ybsTours {
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+}
 .ybsTours .appDeviceContainer .ybsLaptop {
   width: 70%;
 }
@@ -638,9 +751,20 @@ header {
   padding-top: 10%;
   width: 40%;
 }
+@media (max-width: 890px) {
+  .ybsTours .appDeviceContainer .ybsTablet {
+    display: none;
+  }
+}
 .ybsTours .appTextContainer {
   margin: 0;
   padding-left: 40px;
+}
+@media (max-width: 890px) {
+  .ybsTours .appTextContainer {
+    text-align: left;
+    width: 100%;
+  }
 }
 
 .iconBox4 {
@@ -662,7 +786,7 @@ header {
   grid-template-rows: repeat(4, 1fr);
   align-items: center;
   justify-items: center;
-  font-size: clamp(2rem, 10vw, 7rem);
+  font-size: clamp(1rem, 10vw, 7rem);
   color: white;
   margin-top: 0;
   gap: 45px;
@@ -677,11 +801,21 @@ header {
   grid-row: 3/span 2;
   width: 100%;
 }
+@media (max-width: 890px) {
+  .devIconsContainer .iconsList .iconImg {
+    opacity: 0%;
+  }
+}
 
 .wrapper {
   margin: 0 auto;
   width: 75%;
   max-width: 2050px;
+}
+@media (max-width: 1320px) {
+  .wrapper {
+    width: 90%;
+  }
 }
 
 body {
@@ -707,7 +841,7 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 8px;
   color: white;
-  font-size: clamp(3rem, 9vw, 10rem);
+  font-size: clamp(2rem, 9vw, 10rem);
   padding: 10%;
   margin: 0;
 }
