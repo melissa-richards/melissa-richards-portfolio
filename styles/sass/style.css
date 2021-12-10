@@ -612,6 +612,9 @@ header {
   position: fixed;
   z-index: 11;
 }
+.hamburger:focus {
+  border: 1px dotted #2a2a2a;
+}
 
 .navHamburger {
   width: 100%;
