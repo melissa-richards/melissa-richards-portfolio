@@ -17,6 +17,9 @@
         gap: 45px;
         padding-left: 0;
         list-style-type: none;
+        i:hover{
+            color:aqua;
+        }
         .iconImg {
             grid-column: 1 / span 2;
             grid-row: 3 / span 2;

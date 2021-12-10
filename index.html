@@ -35,7 +35,9 @@
                     </ul>
                 </nav>
             </div>
-            <img class='contactLogo' src='./assets/contactLogo.png' alt='Button Logo for contact information'>
+            <a href='#contact' class='contactHeader'>
+                <img class='contactLogo' src='./assets/contactLogo.png' alt='Button Logo for contact information'>
+            </a>
         </div>
     </header>
     <main class='wrapper'>
@@ -44,9 +46,8 @@
                 <div class='leftLanding wrapper'>
                     <div class='iconsBox'><img src="./assets/multiIcons.png" alt="icon box full of old style icons">
                     </div>
-                    <p class='intro'>Hi There! My name is Melissa Richards and i am passionate about integrating design
-                        and web-development in accessible and fashionable ways. I like to understand the brand and
-                        products from the start to the finish of the App</p>
+                    <p class='intro'>Hi There! My name is Melissa Richards AKA 'mo'! I am a Toronto based front-end developer and graphic
+                        designer. When I'm not coding you can find me reviewing pickles on twitter <span>✌︎ </span></p>
                 </div>
                 <h2>/dev /design</h2>
             </div>
@@ -63,18 +64,13 @@
                 <div class='portrait'>
                     <img src='./assets/bwABOUT.png'
                     alt='black and white photo of Melissa laying on the floor with hand behind her head. Photo by Alyson Hardwick'>       
-                    <p><a href='#Contact'>Email Me!</a></p>
+                    <p><a href='./assets/melissa-richards-resume-2021.pdf' download><i class="fas fa-envelope-open-text"></i></a></p>
                 </div>
             </div>
             <div class='aboutMeText'>
-                <p>Hi There! My name is Melissa Richards and i am passionate about integrating design and
+                <p>Hi There! My name is Mo! I am passionate about integrating design and
                     web-development in accessible and
-                    fashionable ways. I like to understand the brand and products from the start to the finish of
-                    the
-                    AppHi There! My name is Melissa Richards and i am passionate about integrating design and
-                    web-development in accessible and fashionable ways. I like to understand the brand and products
-                    from
-                    the start to the finish of the App</p>
+                    fashionable ways. I like to understand the brand and products from the creation of the wireframe to the deploy of the App. User experience is very important to me which means writing clean and accessible code. With my background in graphic design, I pay close attention to detail and take pride in creating beautiful engaging web experiences. </p>
             </div>
             </div>
         </section>
@@ -103,8 +99,8 @@
             <img>
         </section>
         <section id='projects' class='projects'>
+            <h2>/Projects</h2>
             <div class='namerContainer'>
-                <h2>/Projects</h2>
                 <div class='appDeviceContainer'>
                     <img src='./assets/namerDeviceMockUp.png'
                         alt='Device mock up of the Namer App on a laptop and phone screen'>
@@ -114,42 +110,62 @@
                     <p>So you play the game, whats more important than rank? Your name! Your brand! Namer the gamer tag
                         generator helps you choose THE most unique handle for all of your smurfing needs!
                     </p>
+                <div class="projectLinks">
+                    <a href="https://gamer-namer.netlify.app/" class="projectWebsite">View App</a>
+                    <a href="https://github.com/melissa-richards/melissa-richards-project3" class="projectRepo">GitHub</a>
+                </div>
                 </div>
             </div>
             <div class='deliciousContainer'>
                 <div class='appTextContainer'>
                     <h3>Delicious</h3>
-                    <p>A multi-page website PSD conversion made from a client brief. Using responsive design and
+                    <p>A beautiful multi-page website PSD conversion made from a client brief. Using responsive design and
                         CSS/HTML best practices</p>
+                    <div class="projectLinks">
+                        <a href="https://delicious-mockup.netlify.app/" class="projectWebsite">View App</a>
+                        <a href="https://github.com/melissa-richards/melissa-richards-project-one" class="projectRepo">GitHub</a>
+                    </div>
                 </div>
                 <div class='appDeviceContainer'>
                     <img src='./assets/deliciousDeviceMockUp.png'
                         alt='Device mock up of the Delicious app on a tablet screen'>
                 </div>
             </div>
-            <div class='thatGenre'>
+            <div class='thatGenreContainer'>
                 <div class='appTextContainer'>
                     <h3>That Genre</h3>
-                    <p>When the Netflix algorithm just isnt hitting right. Cinephiles can use That Genre App to search
+                    <p>When the Netflix algorithm just isnt hitting right. Cinephiles can use "That Genre" to search
                         for movie titles in
-                        their desired genre resulting in lists of movies from around the globe</p>
-                </div>
-                <div class='appDeviceContainer'>
-                    <img src='./assets/thatGenreDeviceMockUp.png'
+                        their desired genre resulting in lists of movies from around the globe. This App was made in partnership with Hayden Crocker using The Movie Database API.</p>
+                        <div class="projectLinks">
+                            <a href="https://thatgenre.netlify.app/" class="projectWebsite">View App</a>
+                            <a href="https://github.com/melissaAndHaydenProjectTwo/thatGenre" class="projectRepo">GitHub</a>
+                        </div>
+                    </div>
+                    <div class='appDeviceContainer'>
+                        <img src='./assets/thatGenreDeviceMockUp.png'
                         alt='Device mock up of That Genre App on a laptop and phone screen'>
+                    </div>
                 </div>
-            </div>
-            <div><img src='./assets/iconsBox4.png' alt='Icon box with keyboard icon inside'></div>
-            <div class='ybsTours'>
-                <div class='appDeviceContainer'>
-                    <img src='./assets/ybs2DeviceMockUp.png' alt='Device mock up of the YBS Tours App on a laptop'>
-                    <img src='./assets/ybsDeviceMockUp.png' alt='Device mock up for the YBS Tours App on a phone'>
+                <div class='ybsTours'>
+                    <div class='appDeviceContainer'>
+                        <div class='ybsLaptop'>
+                            <img src='./assets/ybsDeviceMockUpLaptop.png' alt='Device mock up for the YBS Tours App on a phone'>
+                        </div>
+                        <div class='ybsTablet'>
+                            <img src='./assets/ybs2DeviceMockUp.png' alt='Device mock up of the YBS Tours App on a laptop'>
+                        </div>
+                    </div>
+                    <div class='appTextContainer'>
+                        <h3>YBS GALACTIC TOURS</h3>
+                        <p>A react app created from a client brief for YBS Galactic Tours that provided an online preview of their upcoming space tours. This App was created with Isabella Wang, Kristin McCollum, and Sean Sipus using functional React Components, local storage and Rest APIS.</p>
+                        <div class="projectLinks">
+                            <a href="https://ybstours.netlify.app/" class="projectWebsite">View App</a>
+                            <a href="https://github.com/Yeeting-Billionaires-Into-Space/YBSGalacticTours" class="projectRepo">GitHub</a>
+                        </div>
+                    </div>
                 </div>
-                <div class='appTextContainer'>
-                    <h3></h3>
-                    <p>A react app created from a client brief for YBS Galactic Tours that provided an online preview of their upcoming space tours.</p>
-                </div>
-            </div>
+                <!-- <div class='iconBox4'><img class='keyboard' src='./assets/iconsBox4.png' alt='Icon box with keyboard icon inside'></div> -->
         </section>
         <section id='contact' class='contact'>
             <h2>/Contact</h2>
@@ -167,7 +183,7 @@
                         <textarea id='Message' name='Message' class='message' rows='10' maxlength='3000'
                             placeholder="what's on your mind?" required></textarea>
                     </div>
-                    <div class='submitButtonBorm'>
+                    <div class='submitButtonForm'>
                         <button type='submit' id='contactButton' class='submit'>Send</button>
                     </div>
                 </form>
@@ -176,30 +192,20 @@
     </main>
     <footer>
         <div class='footerContainer'>
-            <div>
-                <ul class='footerIconsList'>
-                    <li><i class="fab fa-js-square"></i></li>
-                    <li><i class="devicon-html5-plain"></i></li>
-                    <li><i class="devicon-firebase-plain"></i></li>
-                    <li><i class="fab fa-github-square"></i></li>
-                    <li><i class="fab fa-sass"></i></li>
-                    <li><i class="devicon-vscode-plain"></i></li>
-                    <li><i class="fab fa-react"></i></li>
-                    <li><i class="devicon-jquery-plain"></i></li>
-                    <li><i class="devicon-photoshop-plain"></i></li>
-                </ul>
-            </div>
-            <div>
-                <img src='./assets/iconsBox2.png' alt='Old style icons in a box'>
-            </div>
             <div class='followIcons'>
                 <ul>
                     <li><a href='https://www.instagram.com/thelittlestmomo/?hl=en'><i class="fab fa-instagram"></i></a>
                     </li>
                     <li><a href='https://www.linkedin.com/in/melissa-richards-30a26b89/'><i
-                                class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href='https://twitter.com/Dumbmates'><i class="fab fa-twitter"></i></a></li>
-                </ul>
+                        class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href='https://twitter.com/Dumbmates'><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+            </div>
+            <div class="photoContainer">
+                <img class='momoLogo2' src='./assets/momoLogo.png' alt='Logo for Melissa Richards. Nickname Momo'>
+            </div>
+            <div class='oldIcons'>
+                <img src='./assets/iconsBox2.png' alt='Old style icons in a box'>
             </div>
         </div>
     </footer>

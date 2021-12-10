@@ -3,6 +3,10 @@ form {
   margin: 0 auto;
 }
 
+.contact h2 {
+  margin-left: 8%;
+}
+
 .formFlexContainer {
   display: flex;
 }
@@ -17,8 +21,7 @@ form {
 
 .name,
 .email,
-.message,
-.submit {
+.message {
   background-color: aqua;
   color: #ff0062;
   border: 6px solid #ff0062;
@@ -30,27 +33,36 @@ form {
   padding: 10px;
   margin: 10px;
 }
-.name::-moz-placeholder, .email::-moz-placeholder, .message::-moz-placeholder, .submit::-moz-placeholder {
+.name::-moz-placeholder, .email::-moz-placeholder, .message::-moz-placeholder {
   opacity: 1;
 }
-.name:-ms-input-placeholder, .email:-ms-input-placeholder, .message:-ms-input-placeholder, .submit:-ms-input-placeholder {
+.name:-ms-input-placeholder, .email:-ms-input-placeholder, .message:-ms-input-placeholder {
   opacity: 1;
 }
 .name::placeholder,
 .email::placeholder,
-.message::placeholder,
-.submit::placeholder {
+.message::placeholder {
   opacity: 1;
 }
 
-.submit:hover,
-:focus {
+.submit {
+  border: 6px solid #ff0062;
+  color: #ff0062;
+  background-color: aqua;
+  font-family: "changeling-neo", sans-serif;
+  font-weight: 400;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+.submit:hover, .submit:focus {
   background: linear-gradient(89deg, #ff00bd, #ffe300, #00ff0a, #00ffeb);
   background-size: 800% 800%;
   -webkit-animation: AnimationName 59s ease infinite;
   animation: AnimationName 10s ease infinite;
 }
-
 @-webkit-keyframes AnimationName {
   0% {
     background-position: 0% 52%;
@@ -73,6 +85,7 @@ form {
     background-position: 0% 52%;
   }
 }
+
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -332,6 +345,55 @@ template {
   padding-left: 25px;
 }
 
+footer {
+  margin-top: 10%;
+}
+
+.footerContainer {
+  background-image: url(../../assets/BLASTER_Gradient_9.jpg);
+  background-size: cover;
+  border-radius: 40px 40px 0px 0px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footerContainer .oldIcons {
+  width: 33.3%;
+  padding: 50px;
+}
+.footerContainer .photoContainer {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.footerContainer .photoContainer img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 50%;
+}
+
+.followIcons {
+  margin-top: 4%;
+}
+.followIcons ul {
+  width: 33.3%;
+  display: flex;
+  list-style-type: none;
+}
+.followIcons li {
+  padding: 20%;
+}
+.followIcons a {
+  color: white;
+  font-size: 3rem;
+  padding: 25px;
+}
+.followIcons a:hover {
+  color: #ff0077;
+}
+
 .aboutMe {
   width: 100%;
   height: 100vh;
@@ -349,6 +411,18 @@ template {
   position: relative;
   width: 55%;
   margin-left: 35%;
+  z-index: 4;
+  cursor: url(../../assets/yinyangCursor.png), auto;
+}
+.portrait:hover {
+  background-image: url(../../assets/moGlitch.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 35px;
+  z-index: 5;
+}
+.portrait:hover img {
+  opacity: 0%;
 }
 .portrait img {
   border-radius: 35px;
@@ -363,13 +437,13 @@ template {
   border: 2px solid #fb195d;
   border-radius: 100px;
   text-align: center;
-  padding-top: 6%;
+  padding-top: 7%;
 }
 .portrait p a {
   color: #fb195d;
   font-family: "changeling-neo", sans-serif;
   font-weight: 400;
-  font-size: 2.2rem;
+  font-size: 3.2rem;
   text-transform: uppercase;
 }
 .portrait p a:hover {
@@ -390,6 +464,7 @@ template {
 .parentContainer h2 {
   position: relative;
   z-index: 9;
+  cursor: url(../../assets/yinyangCursor.png), auto;
 }
 .parentContainer .aboutMePositions {
   position: absolute;
@@ -414,11 +489,14 @@ header {
   justify-content: space-between;
 }
 .headerContainer .momoLogo,
-.headerContainer .contactLogo {
+.headerContainer .contactHeader {
   width: 20%;
   max-width: 180px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+.headerContainer .contactLogo {
+  padding-top: 15px;
 }
 .headerContainer button {
   z-index: 11;
@@ -477,6 +555,100 @@ header {
   text-align: center;
 }
 
+.projects {
+  width: 100%;
+  margin: 0 auto;
+}
+.projects .appDeviceContainer {
+  display: flex;
+}
+.projects .appDeviceContainer img {
+  width: 100%;
+}
+.projects .appTextContainer {
+  width: 50%;
+  margin-left: 10%;
+}
+
+.projectLinks {
+  margin: 30px 5px 0px 0px;
+}
+.projectLinks a {
+  background-color: aqua;
+  color: #ff0062;
+  border: 3px solid #ff0062;
+  font-family: "changeling-neo", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.projectLinks a:hover, .projectLinks a:focus {
+  background-color: chartreuse;
+}
+
+.namerContainer {
+  display: flex;
+}
+
+.deliciousContainer {
+  display: flex;
+  text-align: right;
+  margin-top: 8%;
+}
+.deliciousContainer .appTextContainer {
+  padding-top: 10%;
+  padding-right: 10%;
+  border-top: 9px solid rgba(38, 0, 255, 0.3);
+  border-right: 9px solid rgba(38, 0, 255, 0.3);
+}
+
+.thatGenreContainer {
+  display: flex;
+  margin-top: 20%;
+}
+.thatGenreContainer .appDeviceContainer {
+  display: flex;
+}
+.thatGenreContainer .appDeviceContainer img {
+  width: 100%;
+}
+.thatGenreContainer .appTextContainer {
+  border-top: 9px solid rgba(38, 0, 255, 0.3);
+  border-left: 9px solid rgba(38, 0, 255, 0.3);
+  padding: 5%;
+  margin: 0;
+}
+.thatGenreContainer .appDeviceContainer {
+  width: 100%;
+  margin-left: 5%;
+}
+
+.ybsTours {
+  margin-top: 10%;
+  border-top: 9px solid rgba(38, 0, 255, 0.3);
+  border-left: 9px solid rgba(38, 0, 255, 0.3);
+  padding: 5%;
+}
+.ybsTours .appDeviceContainer .ybsLaptop {
+  width: 70%;
+}
+.ybsTours .appDeviceContainer .ybsTablet {
+  padding-top: 10%;
+  width: 40%;
+}
+.ybsTours .appTextContainer {
+  margin: 0;
+  padding-left: 40px;
+}
+
+.iconBox4 {
+  width: 45%;
+  margin-left: 70%;
+  padding: 0;
+}
+
 .skills h2 {
   margin-left: 30%;
 }
@@ -497,6 +669,9 @@ header {
   padding-left: 0;
   list-style-type: none;
 }
+.devIconsContainer .iconsList i:hover {
+  color: aqua;
+}
 .devIconsContainer .iconsList .iconImg {
   grid-column: 1/span 2;
   grid-row: 3/span 2;
@@ -511,6 +686,8 @@ header {
 
 body {
   overflow-x: hidden;
+  -webkit-animation: fade-in 2s ease-in;
+          animation: fade-in 2s ease-in;
 }
 
 img {
@@ -535,8 +712,16 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  font-family: letter-gothic-std, monospace;
+  font-weight: 400;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  color: white;
+}
+
 p {
-  font-family: interstate, sans-serif;
+  font-family: letter-gothic-std, monospace;
   font-weight: 700;
   color: white;
 }/*# sourceMappingURL=style.css.map */

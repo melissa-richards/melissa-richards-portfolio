@@ -3,6 +3,12 @@ form {
     margin: 0 auto;
 }
 
+.contact {
+    h2{
+        margin-left: 8%;
+    }
+}
+
 .formFlexContainer {
     display: flex;
 }
@@ -17,8 +23,7 @@ form {
 
 .name,
 .email,
-.message,
-.submit {
+.message {
     background-color: aqua;
     color: rgb(255, 0, 98);
     border: 6px solid rgb(255, 0, 98);
@@ -34,35 +39,46 @@ form {
     }
 }
 
-.submit:hover,
-:focus {
-    background: linear-gradient(89deg, #ff00bd, #ffe300, #00ff0a, #00ffeb);
-    background-size: 800% 800%;
-
-    -webkit-animation: AnimationName 59s ease infinite;
-    -moz-animation: AnimationName 59s ease infinite;
-    -o-animation: AnimationName 59s ease infinite;
-    animation: AnimationName 10s ease infinite;
+.submit {
+    border: 6px solid rgb(255, 0, 98);
+    color: rgb(255, 0, 98);
+    background-color: aqua;
+    font-family: "changeling-neo", sans-serif;
+    font-weight: 400;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    &:hover,
+    &:focus {
+        background: linear-gradient(89deg, #ff00bd, #ffe300, #00ff0a, #00ffeb);
+        background-size: 800% 800%;
+    
+        -webkit-animation: AnimationName 59s ease infinite;
+        -moz-animation: AnimationName 59s ease infinite;
+        -o-animation: AnimationName 59s ease infinite;
+        animation: AnimationName 10s ease infinite;
+        
+        @-webkit-keyframes AnimationName {
+            0%{background-position:0% 52%}
+            50%{background-position:100% 49%}
+            100%{background-position:0% 52%}
+        }
+        @-moz-keyframes AnimationName {
+            0%{background-position:0% 52%}
+            50%{background-position:100% 49%}
+            100%{background-position:0% 52%}
+        }
+        @-o-keyframes AnimationName {
+            0%{background-position:0% 52%}
+            50%{background-position:100% 49%}
+            100%{background-position:0% 52%}
+        }
+        @keyframes AnimationName {
+            0%{background-position:0% 52%}
+            50%{background-position:100% 49%}
+            100%{background-position:0% 52%}
+        }
+    }
 }
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 52%}
-    50%{background-position:100% 49%}
-    100%{background-position:0% 52%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 52%}
-    50%{background-position:100% 49%}
-    100%{background-position:0% 52%}
-}
-@-o-keyframes AnimationName {
-    0%{background-position:0% 52%}
-    50%{background-position:100% 49%}
-    100%{background-position:0% 52%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 52%}
-    50%{background-position:100% 49%}
-    100%{background-position:0% 52%}
-}
-

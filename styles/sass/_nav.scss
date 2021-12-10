@@ -10,10 +10,13 @@ header {
     display: flex;
     justify-content: space-between;
     .momoLogo,
-    .contactLogo {
+    .contactHeader {
         width: 20%;
         max-width: 180px;
         object-fit: contain;
+    }
+    .contactLogo{
+        padding-top: 15px;
     }
     button {
         z-index: 11;
@@ -72,3 +75,7 @@ header {
         }
     }
 }
+
+// .contactHeader {
+//     width: 100%;
+// }
